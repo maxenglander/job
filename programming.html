@@ -9,7 +9,7 @@ layout: categoryposts
     {% for post in site.categories['programming'] %}
 
         {% if post.custom_sub == "max/msp" %}
-            <a class="postLink" href="{{ post.url }}">{{ post.title }}</a>
+            <a class="postLink" href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
         {%endif%}
     {% endfor %}
 </div>
