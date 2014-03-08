@@ -1,0 +1,20 @@
+---
+title: see post collection by category
+layout: postcollection
+---
+
+{% for post in site.categories.art %}
+
+<div class="flexItem content">
+    <a href="{{ post.url }}">{{ post.title }}</a>
+    <div style="background-color:blue;">
+        {{ post.custom_bla }}
+    </div>
+    {% if post.js %}
+        js referenced via post.js
+    {% endif %}
+</div>
+
+
+
+{% endfor %}

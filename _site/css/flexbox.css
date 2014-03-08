@@ -1,0 +1,43 @@
+/*****************************************************************************/
+/* flex
+/*****************************************************************************/
+
+.flexbox {
+    /*
+    border-left:1px solid rgba(180, 180, 180, 1);
+    border-right:1px solid rgba(180, 180, 180, 1);
+    */
+    min-height:;
+    /* understand this! */
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    /* flex-flow: <‘flex-direction’> || <‘flex-wrap’> */
+    -webkit-flex-flow: row nowrap;
+    justify-content: space-around;
+    margin-top: 10px;
+
+}
+
+.flexItem {
+    border-bottom:1px solid rgba(180, 180, 180, .7);
+
+    padding: 0px;
+    margin: 4px;
+
+    /*width:25%;*/
+    flex: 1;
+
+    font-size: 18px;
+    /*text-align: center;*/
+}
+
+@media all and (max-width: 540px) {
+    .flexbox {
+    -webkit-flex-flow: column nowrap;
+    justify-content: space-around;
+    }
+}
+

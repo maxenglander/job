@@ -1,0 +1,10 @@
+---
+title: see post collection by category
+layout: categoryposts
+---
+
+{% for post in site.categories.art %}
+
+{% include sprite_artposts.html %}
+
+{% endfor %}

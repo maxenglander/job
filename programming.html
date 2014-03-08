@@ -1,0 +1,19 @@
+---
+title: see post collection by category
+layout: categoryposts
+---
+
+<div class="flexItem content programming">
+<div class="toptop"></div>
+<span>Using Max/MSP with Photoshop</span>
+    {% for post in site.categories['programming'] %}
+
+        {% if post.custom_sub == "max/msp" %}
+            <a class="postLink" href="{{ post.url }}">{{ post.title }}</a>
+        {%endif%}
+    {% endfor %}
+</div>
+
+<!-- <a href="{{ post.url }}">{{ post.title }}</a> -->
+
+
