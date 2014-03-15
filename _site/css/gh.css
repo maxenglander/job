@@ -246,7 +246,7 @@ code, tt {
 
   margin: 0 2px; /* causes slight indentation */
   padding: 0 5px;
-  white-space: nowrap;
+  white-space: pre-line;
 
   border: 1px solid #eaeaea;
   background-color: #f8f8f8;
@@ -275,11 +275,10 @@ pre code {
   border-radius: 3px; }
 
 pre {
- /* display:block!important;*/
+  /* display:block!important;*/
   -webkit-overflow-scrolling: touch;
   word-wrap: normal;
 
-  width:;
   overflow:auto;
   background-color: #f8f8f8;
   border: 1px solid #cccccc;
