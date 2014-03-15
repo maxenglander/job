@@ -275,11 +275,11 @@ pre code {
   border-radius: 3px; }
 
 pre {
-  display:block!important;
+ /* display:block!important;*/
   -webkit-overflow-scrolling: touch;
   word-wrap: normal;
 
-  width:auto;
+  width:;
   overflow:auto;
   background-color: #f8f8f8;
   border: 1px solid #cccccc;
