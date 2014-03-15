@@ -41,11 +41,11 @@
     }
 
     .flexItem {
+        display:block!important;
 
     }
 
     div {
-        display:block!important;
 
     }
 }
