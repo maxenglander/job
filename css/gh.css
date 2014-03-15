@@ -273,8 +273,8 @@ pre code {
   border-radius: 3px; }
 
 pre {
-  width:auto;
-  overflow:auto;
+  width:;
+  overflow:;
   background-color: #f8f8f8;
   border: 1px solid #cccccc;
   font-size: 13px;
@@ -285,18 +285,3 @@ pre {
   pre code, pre tt {
     background-color: transparent;
     border: none; }
-/*
-    pre {
-      display: block;
-      width: auto;
-      overflow: auto;
-      -webkit-overflow-scrolling: touch;
-      white-space: pre;
-      word-wrap: normal;
-    }
-
-    pre code {
-
-      white-space: inherit;
-    }
-*/
