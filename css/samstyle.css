@@ -9,15 +9,15 @@ body {
     padding-left:0px;
     padding-right:0px;
     */
-    font: 13.34px Verdana, helvetica, arial, clean, sans-serif;
+    /*font: 13.34px Verdana, helvetica, arial, clean, sans-serif;*/
     /*font-family: "Consolas", "Monaco", "Courier New", "Courier", monospace;*/
     font-size:100%
 
 }
 
 .wrapper {
-    min-width:440px;
-    max-width: 700px;
+    min-width:320px;
+    max-width: 784px;
 
     margin-left: auto;
     margin-right: auto;
@@ -26,8 +26,8 @@ body {
 .content {
 
     text-align:left;
-   /* background: #FFFEE6; */
-    background: rgba(180, 180, 180, .1);
+    /*background: #FFFEE6;*/
+    /*background: rgba(180, 180, 180, .1);*/
 }
 
 /*****************************************************************************/
@@ -123,19 +123,13 @@ a {
 
 }
 
-.toptop {
+.cspan {
+
     display:block;
-    margin-left:;
-    text-align:;
-    height:6px;
-    margin:0px;
-    padding:0px;
-
-    /*-webkit-box-shadow: 0px 3px rgba(180, 180, 180, .1);*/
-
-    background-image: url(../images/badboxmonsters_banner.jpg);
-    /* border-image: url(../images/badboxmonsters_banner.jpg) 10% 10% 10% 10% ;*/
-    background-position:0px -40px;
-    background-size: 700px 180px;
-    background-repeat: repeat;
+    font-weight:bold;
+    text-shadow: 3px 2px 0px rgba(180, 180, 180, .6);
+    text-align:center;
+    font-size:80%;
+    color: #000;
+    flex: 1;
 }

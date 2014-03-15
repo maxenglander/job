@@ -1,25 +1,51 @@
-<div class="flexItem content">
-    <div class="toptop"></div>
-
-<span>{{ post.title }}</span>
 {% if post.category == 'art' %}
 
-<div class="scott" style="height: 250px;width:max;background-image: url({{ site.baseurl }}/images/{{ post.custom_sprite }}_spriteSmall.jpg);"></div>
+<div class="flexItem content scott" style="height: 250px;width:200px;background-image: url({{ site.baseurl }}/images/{{ post.custom_sprite }}_spriteSmall.jpg);">
+<span>{{ post.title }}</span>
 
 <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
 
 <script type="text/javascript" src="{{ site.baseurl }}/scripts/jquery.animateSprite.min.js"></script>
 
 <script type="text/javascript">
+var eek = 0;
       $(function() {
-                $(".scott, .ramona").animateSprite({
-                    fps: 10,
-                    loop: true,
-                    animations: {
-                        walkRight: [0, 1, 2, 3, 4, 5, 6, 7],
-                        walkLeft: [15, 14, 13, 12, 11, 10, 9, 8]
-                    }
-                });
+                        $('.scott')
+                            .mouseenter(function() {
+                                eek++;
+                                if(eek==1) {
+                                    $('.scott').animateSprite({
+                                        fps: 10,
+                                        loop: true,
+                                        animations: {
+                                            walkRight: [ 1, 2, 3, 4, 5, 6, 7],
+                                        }
+                                    });
+                                } else {
+                                    $('.scott').animateSprite('resumeAnimation');
+                                }
+                            })
+                            .mouseleave(function() {
+                                $('.scott').animateSprite('stopAnimation');
+                            });
+
+
+                        /*
+                    .mouseleave(function() {
+                        $('.scott').animateSprite('stopAnimation');
+                    });*/
+
+
+                $( "div.enterleave" )
+                  .mouseenter(function() {
+                    n += 1;
+                    $( this ).find( "span" ).text( "mouse enter x " + n );
+                  })
+                  .mouseleave(function() {
+                    $( this ).find( "span" ).text( "mouse leave" );
+                  });
+
+
 
                 $('.ramona-left').on('click', function(ev){
                     ev.preventDefault();
@@ -47,7 +73,7 @@
                 $('#restart-animation').on('click', function(){
                     $('.scott').animateSprite('restartAnimation');
                 });
-                $('#stop-animation').on('click', function(){
+                $('.scott').on('click', function(){
                     $('.scott').animateSprite('stopAnimation');
                 });
                 $('#goto-frame').on('click', function(){
