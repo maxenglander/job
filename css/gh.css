@@ -284,18 +284,6 @@ pre {
   line-height: 19px;
   padding: 6px 10px;
   border-radius: 3px;
-
-background: transparent !important;
-margin: 0 !important;
-padding: 0 !important;
-width: auto !important;
-float: none !important;
-clear: none !important;
-overflow: visible !important;
-font-family: monospace !important;
-font-size: 12px !important;
-line-height: 16px !important;
-white-space: pre !important;
 }
   pre code, pre tt {
     background-color: transparent;
