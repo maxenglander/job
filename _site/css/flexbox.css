@@ -34,19 +34,24 @@
 }
 
 @media all and (max-width: 540px) {
+
     .flexbox {
     -webkit-flex-flow: column nowrap;
     justify-content: space-around;
     }
 
     .flexItem {
-        flex:;
+    }
+}
+
+@media all and (max-width: 400px) {
+    .flexbox {
+    -webkit-flex-flow: column nowrap;
+    justify-content: space-around;
     }
 
-    div{
-        display:block!important;/*
-        width:100%!important;
-        margin:0!important;
-        padding:0!important;*/
+    .flexItem {
+        display:block;
     }
+
 }

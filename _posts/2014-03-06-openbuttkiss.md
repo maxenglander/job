@@ -119,7 +119,12 @@ Much of my code was scraped/taken from Tom Krcha's [getting-started-plugin](http
 ^
 
 {:.break-me}
-    var colorFlip = "var fColor = app.foregroundColor; app.foregroundColor = app.backgroundColor; app.backgroundColor = fColor;";
+
+~~~
+var colorFlip = "var fColor = app.foregroundColor;
+    app.foregroundColor = app.backgroundColor;
+    app.backgroundColor = fColor;";
+~~~
 
 * This simple block of code swaps the foreground and background colors. As this is jsx code, we must treat it differently than the other javascript code in main.js. It must be passed as a string through _generator.evaluateJSXString(''). I got majorly stuck on this when I first tried to do anything with JSX code and Generator - [this is me getting help](https://github.com/adobe-photoshop/generator-core/issues/138 "thx joel").
 ^
@@ -161,10 +166,13 @@ For more info on opensoundcontrol
 function actions(){
     _generator.evaluateJSXString(colorFlip);
     _generator.evaluateJSXString(psToFront);
+    xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+    xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 }
 ~~~
 
 Called from our oscServer.on, this function executes two things, colorFlip followed by our psToFront. Remember, both of these must be passed to _generator.evaluateJSXString().
+
 
 ~~~
 if(checked==true) {

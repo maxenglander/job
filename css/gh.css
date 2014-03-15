@@ -77,8 +77,6 @@ h6 {
   color: #777777;
   font-size: 14px; }
 
-p, blockquote, ul, ol, dl, li, table, pre {
-  margin: 15px 0; }
 
 hr {
   background: transparent url("../../images/modules/pulls/dirty-shade.png") repeat-x 0 0;
@@ -241,7 +239,6 @@ span.float-right {
 
 
 code, tt {
-
   font-size: 92%;
   /*line-height: 19px;*/
 
@@ -256,7 +253,7 @@ code, tt {
 pre code {
   margin: 0;
   padding: 0;
-  white-space: pre-wrap;
+  white-space: pre;
   border: none;
   background: transparent; }
 
@@ -276,8 +273,7 @@ pre code {
   border-radius: 3px; }
 
 pre {
-
-  overflow: auto;
+  overflow:auto;
   background-color: #f8f8f8;
   border: 1px solid #cccccc;
   font-size: 13px;
@@ -288,4 +284,18 @@ pre {
   pre code, pre tt {
     background-color: transparent;
     border: none; }
+/*
+    pre {
+      display: block;
+      width: auto;
+      overflow: auto;
+      -webkit-overflow-scrolling: touch;
+      white-space: pre;
+      word-wrap: normal;
+    }
 
+    pre code {
+
+      white-space: inherit;
+    }
+*/

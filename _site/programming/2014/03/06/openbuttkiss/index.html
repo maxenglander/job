@@ -171,7 +171,9 @@
   <li>By sending this to evaluateJSX, the photoshop application is targeted and brought to the front of any applications we also have open.</li>
 </ul>
 
-<pre class="break-me"><code>var colorFlip = "var fColor = app.foregroundColor; app.foregroundColor = app.backgroundColor; app.backgroundColor = fColor;";
+<pre><code>var colorFlip = "var fColor = app.foregroundColor;
+    app.foregroundColor = app.backgroundColor;
+    app.backgroundColor = fColor;";
 </code></pre>
 
 <ul>
@@ -239,6 +241,8 @@
 <pre><code>function actions(){
     _generator.evaluateJSXString(colorFlip);
     _generator.evaluateJSXString(psToFront);
+    xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+    xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 }
 </code></pre>
 
