@@ -7,8 +7,6 @@
     border-left:1px solid rgba(180, 180, 180, 1);
     border-right:1px solid rgba(180, 180, 180, 1);
     */
-    width:100%;
-
     min-height:;
     /* understand this! */
     display: -webkit-box;
@@ -45,8 +43,8 @@
         flex:;
     }
 
-    div{/*
-        display:block!important;
+    div{
+        display:block!important;/*
         width:100%!important;
         margin:0!important;
         padding:0!important;*/
