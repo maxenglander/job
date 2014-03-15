@@ -149,8 +149,10 @@ blockquote {
     margin-bottom: 0; }
 
 table {
+  word-break:keep-all;
   padding: 0; }
   table tr {
+    display:;
     border-top: 1px solid #cccccc;
     background-color: white;
     margin: 0;
@@ -162,12 +164,12 @@ table {
       border: 1px solid #cccccc;
       text-align: left;
       margin: 0;
-      padding: 6px 13px; }
+      padding: 6px 6px; }
     table tr td {
       border: 1px solid #cccccc;
       text-align: left;
       margin: 0;
-      padding: 6px 13px; }
+      padding: 6px 6px; }
     table tr th :first-child, table tr td :first-child {
       margin-top: 0; }
     table tr th :last-child, table tr td :last-child {
@@ -274,6 +276,8 @@ pre code {
 
 pre {
   display:block!important;
+  -webkit-overflow-scrolling: touch;
+  word-wrap: normal;
 
   width:auto;
   overflow:auto;

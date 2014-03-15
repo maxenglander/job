@@ -166,8 +166,6 @@ For more info on opensoundcontrol
 function actions(){
     _generator.evaluateJSXString(colorFlip);
     _generator.evaluateJSXString(psToFront);
-    xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-    xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 }
 ~~~
 
