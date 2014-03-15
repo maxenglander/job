@@ -253,7 +253,7 @@ code, tt {
 pre code {
   margin: 0;
   padding: 0;
-  white-space: pre;
+  white-space: pre-wrap;
   border: none;
   background: transparent; }
 
@@ -273,6 +273,7 @@ pre code {
   border-radius: 3px; }
 
 pre {
+  width:auto;
   overflow:auto;
   background-color: #f8f8f8;
   border: 1px solid #cccccc;
