@@ -38,6 +38,9 @@
     .flexbox {
     -webkit-flex-flow: column nowrap;
     justify-content: space-around;
+
+    display:block!important;
+
     }
 
     .flexItem {
