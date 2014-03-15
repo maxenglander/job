@@ -41,17 +41,7 @@
     }
 
     .flexItem {
-    }
-}
+        display:block!important;
 
-@media all and (max-width: 400px) {
-    .flexbox {
-    -webkit-flex-flow: column nowrap;
-    justify-content: space-around;
     }
-
-    .flexItem {
-        display:block;
-    }
-
 }
