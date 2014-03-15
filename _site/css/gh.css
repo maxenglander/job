@@ -251,9 +251,6 @@ code, tt {
   border-radius: 3px; }
 
 pre code {
-        display:block!important;
-
-
   margin: 0;
   padding: 0;
   white-space: pre;
@@ -276,8 +273,7 @@ pre code {
   border-radius: 3px; }
 
 pre {
-        display:block!important;
-
+  display:block!important;
 
   width:auto;
   overflow:auto;
