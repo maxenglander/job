@@ -44,3 +44,14 @@
     }
 }
 
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    .flexbox {
+    -webkit-flex-flow: column nowrap;
+    justify-content: space-around;
+    }
+
+    .flexItem {
+        flex: 1;
+    }
+
+}
