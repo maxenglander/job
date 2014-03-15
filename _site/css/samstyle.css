@@ -16,6 +16,8 @@ body {
 }
 
 .wrapper {
+    display:block!important;
+
     min-width:320px;
     max-width: 784px;
 
