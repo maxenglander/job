@@ -25,7 +25,7 @@ body {
     margin-right: auto;
 }
 
-.content {
+.collect {
     text-align:left;
     /*background: #FFFEE6;*/
     /*background: rgba(180, 180, 180, .1);*/
@@ -70,7 +70,7 @@ a {
     /*background: #AED180;*/
 }
 
-.content span {
+.collect span {
 
     display:block;
     font-weight:bold;
@@ -84,7 +84,7 @@ a {
 
 }
 
-.content a, .content ul a {
+.collect a, .collect ul a {
     display:block;
     background: rgba(180, 180, 180, .1);
 
@@ -93,21 +93,11 @@ a {
     color: #000;
     font-size: 80%;
     border-bottom:1px solid rgba(180, 180, 180, .7);
-    flex: 1;
     text-align: center;
 
-    /*
-    color: #000;
-    font-size: 90%;
-    padding:1px;
-    margin-left:5px;
-    background:#92BF6F;
-    display:block;
-    border:2px solid white;
-    */
 }
 
-.content a:hover, .content ul a:hover {
+.collect a:hover, .collect ul a:hover {
   color: #fff;
   background: #000;
 }
@@ -120,8 +110,6 @@ a {
 }
 
 .programming {
-    min-height:450px;
-
 }
 
 .cspan {

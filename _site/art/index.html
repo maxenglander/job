@@ -27,99 +27,9 @@
    <div id="post" class="flexbox">
 
 
+    
 
-
-
-
-<div class="flexItem content scott" style="height: 250px;width:200px;background-image: url(/images/bunnybot_spriteSmall.jpg);">
-<span>bunnybot</span>
-
-<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
-
-<script type="text/javascript" src="/scripts/jquery.animateSprite.min.js"></script>
-
-<script type="text/javascript">
-var eek = 0;
-      $(function() {
-                        $('.scott')
-                            .mouseenter(function() {
-                                eek++;
-                                if(eek==1) {
-                                    $('.scott').animateSprite({
-                                        fps: 10,
-                                        loop: true,
-                                        animations: {
-                                            walkRight: [ 1, 2, 3, 4, 5, 6, 7],
-                                        }
-                                    });
-                                } else {
-                                    $('.scott').animateSprite('resumeAnimation');
-                                }
-                            })
-                            .mouseleave(function() {
-                                $('.scott').animateSprite('stopAnimation');
-                            });
-
-
-                        /*
-                    .mouseleave(function() {
-                        $('.scott').animateSprite('stopAnimation');
-                    });*/
-
-
-                $( "div.enterleave" )
-                  .mouseenter(function() {
-                    n += 1;
-                    $( this ).find( "span" ).text( "mouse enter x " + n );
-                  })
-                  .mouseleave(function() {
-                    $( this ).find( "span" ).text( "mouse leave" );
-                  });
-
-
-
-                $('.ramona-left').on('click', function(ev){
-                    ev.preventDefault();
-                    $('.ramona').animateSprite('play', 'walkLeft');
-                });
-                $('.ramona-right').on('click', function(ev){
-                    ev.preventDefault();
-                    $('.ramona').animateSprite('play', 'walkRight');
-                });
-
-                $('#play-left').on('click', function(){
-                    $('.scott').animateSprite('play', 'walkLeft');
-                });
-
-                $('#play-right').on('click', function(){
-                    $('.scott').animateSprite('play', 'walkRight');
-                });
-
-                $('#stop-animation').on('click', function(){
-                    $('.scott').animateSprite('stopAnimation');
-                });
-                $('#resume-animation').on('click', function(){
-                    $('.scott').animateSprite('resumeAnimation');
-                });
-                $('#restart-animation').on('click', function(){
-                    $('.scott').animateSprite('restartAnimation');
-                });
-                $('.scott').on('click', function(){
-                    $('.scott').animateSprite('stopAnimation');
-                });
-                $('#goto-frame').on('click', function(){
-                    $('.scott').animateSprite('frame', 3);
-                });
-            });
-</script>
-
-
-</div>
-
-
-
-
-
+    
 
 <div class="flexItem content scott" style="height: 250px;width:200px;background-image: url(/images/bunnybot_spriteSmall.jpg);">
 <span>bunnybot</span>
@@ -209,7 +119,7 @@ var eek = 0;
 
 
 
-
+    
 
 <div class="flexItem content scott" style="height: 250px;width:200px;background-image: url(/images/bunnybot_spriteSmall.jpg);">
 <span>bunnybot</span>
@@ -299,7 +209,97 @@ var eek = 0;
 
 
 
+    
 
+<div class="flexItem content scott" style="height: 250px;width:200px;background-image: url(/images/bunnybot_spriteSmall.jpg);">
+<span>bunnybot</span>
+
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+
+<script type="text/javascript" src="/scripts/jquery.animateSprite.min.js"></script>
+
+<script type="text/javascript">
+var eek = 0;
+      $(function() {
+                        $('.scott')
+                            .mouseenter(function() {
+                                eek++;
+                                if(eek==1) {
+                                    $('.scott').animateSprite({
+                                        fps: 10,
+                                        loop: true,
+                                        animations: {
+                                            walkRight: [ 1, 2, 3, 4, 5, 6, 7],
+                                        }
+                                    });
+                                } else {
+                                    $('.scott').animateSprite('resumeAnimation');
+                                }
+                            })
+                            .mouseleave(function() {
+                                $('.scott').animateSprite('stopAnimation');
+                            });
+
+
+                        /*
+                    .mouseleave(function() {
+                        $('.scott').animateSprite('stopAnimation');
+                    });*/
+
+
+                $( "div.enterleave" )
+                  .mouseenter(function() {
+                    n += 1;
+                    $( this ).find( "span" ).text( "mouse enter x " + n );
+                  })
+                  .mouseleave(function() {
+                    $( this ).find( "span" ).text( "mouse leave" );
+                  });
+
+
+
+                $('.ramona-left').on('click', function(ev){
+                    ev.preventDefault();
+                    $('.ramona').animateSprite('play', 'walkLeft');
+                });
+                $('.ramona-right').on('click', function(ev){
+                    ev.preventDefault();
+                    $('.ramona').animateSprite('play', 'walkRight');
+                });
+
+                $('#play-left').on('click', function(){
+                    $('.scott').animateSprite('play', 'walkLeft');
+                });
+
+                $('#play-right').on('click', function(){
+                    $('.scott').animateSprite('play', 'walkRight');
+                });
+
+                $('#stop-animation').on('click', function(){
+                    $('.scott').animateSprite('stopAnimation');
+                });
+                $('#resume-animation').on('click', function(){
+                    $('.scott').animateSprite('resumeAnimation');
+                });
+                $('#restart-animation').on('click', function(){
+                    $('.scott').animateSprite('restartAnimation');
+                });
+                $('.scott').on('click', function(){
+                    $('.scott').animateSprite('stopAnimation');
+                });
+                $('#goto-frame').on('click', function(){
+                    $('.scott').animateSprite('frame', 3);
+                });
+            });
+</script>
+
+
+</div>
+
+
+
+
+    
 
 <div class="flexItem content scott" style="height: 250px;width:200px;background-image: url(/images/bunnybot_spriteSmall.jpg);">
 <span>bunnybot</span>
