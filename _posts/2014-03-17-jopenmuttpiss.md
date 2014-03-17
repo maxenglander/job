@@ -1,5 +1,5 @@
 ---
-title: intro to max and ps
+title: jopenmuttpiss
 layout: post
 category: programming
 custom_sub: max/msp
