@@ -9,6 +9,8 @@
     */
     min-height:;
     /* understand this! */
+
+
     display: -webkit-box;
     display: -moz-box;
     display: -ms-flexbox;
@@ -20,6 +22,12 @@
     margin-top: 10px;
     width:auto;
 
+    -webkit-box-align: center;
+    -webkit-flex-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+
 }
 
 .flexItem {
@@ -29,9 +37,15 @@
     margin-left:auto;
     margin-right:auto;
 
+    -webkit-box-flex: 1;      /* OLD - iOS 6-, Safari 3.1-6 */
+    -moz-box-flex: 1;         /* OLD - Firefox 19- */
+    width: 100%;               /* For old syntax, otherwise collapses. */
+    -webkit-flex: 1;          /* Chrome */
+    -ms-flex: 1;              /* IE 10 */
+    flex: 1;
+
     /*text-align: center;*/
     /*width:25%;*/
-    flex: 1;
 }
 
 @media all and (max-width: 540px) {
@@ -39,13 +53,11 @@
     .flexbox {
         -webkit-flex-flow: column nowrap;
         justify-content: space-around;
-        width:auto;
 
 
     }
 
     .flexItem {
-        width:auto;
     }
 
     div {
