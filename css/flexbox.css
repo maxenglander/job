@@ -34,22 +34,23 @@
     flex: 1;
 }
 
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+    .flexbox {
+    -webkit-flex-flow: column nowrap;
+    justify-content: space-around;
+    }
+
+}
+
+
+/*
 @media all and (max-width: 540px) {
 
     .flexbox {
     -webkit-flex-flow: column nowrap;
     justify-content: space-around;
-        display:block!important;
-
-
     }
 
-    .flexItem {
-        display:block!important;
-
-    }
-
-    div {
-
-    }
 }
+*/
