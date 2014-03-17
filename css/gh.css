@@ -260,8 +260,8 @@ pre code {
   background: transparent; }
 
 .break-me code {
-  white-space: normal;
-
+  /*white-space: normal;*/
+  word-wrap:;
 }
 
 
