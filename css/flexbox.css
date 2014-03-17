@@ -34,14 +34,20 @@
     flex: 1;
 }
 
-
-
 @media all and (max-width: 540px) {
 
     .flexbox {
     -webkit-flex-flow: column nowrap;
     justify-content: space-around;
+
+
     }
 
-}
+    .flexItem {
 
+    }
+
+    div {
+
+    }
+}
