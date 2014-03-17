@@ -260,8 +260,8 @@ pre code {
   background: transparent; }
 
 .break-me code {
-  /*white-space: normal;*/
-  word-wrap:break-word;
+  white-space: normal;
+
 }
 
 
@@ -279,7 +279,6 @@ pre {
   -webkit-overflow-scrolling: touch;
   word-wrap: normal;
 
-  width:auto;
   overflow:auto;
   background-color: #f8f8f8;
   border: 1px solid #cccccc;
