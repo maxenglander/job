@@ -34,15 +34,8 @@
     flex: 1;
 }
 
-@media only screen and (max-width: 35em) {
-    .flexbox {
-    -webkit-flex-flow: column nowrap;
-    justify-content: space-around;
-    }
-}
 
 
-/*
 @media all and (max-width: 540px) {
 
     .flexbox {
@@ -51,4 +44,4 @@
     }
 
 }
-*/
+
