@@ -37,17 +37,19 @@
 @media all and (max-width: 540px) {
 
     .flexbox {
-    -webkit-flex-flow: column nowrap;
-    justify-content: space-around;
+        -webkit-flex-flow: column nowrap;
+        justify-content: space-around;
+        width:auto;
 
 
     }
 
     .flexItem {
+        width:auto;
     }
 
     div {
-    /*display:block!important;*/
+        /*display:block!important;*/
 
     }
 }
