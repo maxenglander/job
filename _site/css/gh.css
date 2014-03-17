@@ -261,7 +261,7 @@ pre code {
 
 .break-me code {
   /*white-space: normal;*/
-  word-wrap:;
+  word-wrap:break-word;
 }
 
 
