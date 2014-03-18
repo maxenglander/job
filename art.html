@@ -3,7 +3,14 @@ title: see post collection by category
 layout: post_collect
 ---
 {% for post in site.categories.art %}
+    {% if post.category == 'art' %}
+        {% capture position %}{{post.custom_spritePos}}{% endcapture %}
+        {% capture width %}{{post.custom_spritePos}}{% endcapture %}
+        {% capture frequency %}{{post.custom_spriteFreq}}{% endcapture %}
 
-    {% include sprite_artposts.html %}
-
+        {% for i in (1..frequency) %}
+            <div class="a_flexitem collect {{ post.custom_sprite }}" style="width:180px;background-position:{{ position }}px 0px;"></div>
+            {% capture position %}{{ position | plus: 200 }}{% endcapture %}
+        {% endfor %}
+    {% endif %}
 {% endfor %}

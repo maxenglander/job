@@ -79,7 +79,6 @@ a {
     padding:6px;
     margin:10px;
     color: #000;
-    flex: 1;
 
 
 }
@@ -102,13 +101,6 @@ a {
   background: #000;
 }
 
-.bunnybot {
-    border:1px solid black;
-    height: 140px;
-    width: 108px;
-    background-image: url(img/scottpilgrim.png);
-}
-
 .programming {
 }
 
@@ -120,5 +112,4 @@ a {
     text-align:center;
     font-size:80%;
     color: #000;
-    flex: 1;
 }

@@ -13,6 +13,8 @@
   <link rel="stylesheet" href="/css/flexbox.css" type="text/css">
   <link rel="stylesheet" href="/css/samstyle.css" type="text/css">
   <link rel="stylesheet" href="/css/gh.css" type="text/css">
+  <link rel="stylesheet" href="/css/sprites.css" type="text/css">
+
 </head>
 <body>
 
@@ -28,365 +30,100 @@
 
 
     
-
     
+        
+        
+        
 
-<div class="flexItem collect scott" style="height: 250px;width:200px;background-image: url(/images/bunnybot_spriteSmall.jpg);">
-<span>bunnybot</span>
-
-<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
-
-<script type="text/javascript" src="/scripts/jquery.animateSprite.min.js"></script>
-
-<script type="text/javascript">
-var eek = 0;
-      $(function() {
-                        $('.scott')
-                            .mouseenter(function() {
-                                eek++;
-                                if(eek==1) {
-                                    $('.scott').animateSprite({
-                                        fps: 10,
-                                        loop: true,
-                                        animations: {
-                                            walkRight: [ 1, 2, 3, 4, 5, 6, 7],
-                                        }
-                                    });
-                                } else {
-                                    $('.scott').animateSprite('resumeAnimation');
-                                }
-                            })
-                            .mouseleave(function() {
-                                $('.scott').animateSprite('stopAnimation');
-                            });
-
-
-                        /*
-                    .mouseleave(function() {
-                        $('.scott').animateSprite('stopAnimation');
-                    });*/
-
-
-                $( "div.enterleave" )
-                  .mouseenter(function() {
-                    n += 1;
-                    $( this ).find( "span" ).text( "mouse enter x " + n );
-                  })
-                  .mouseleave(function() {
-                    $( this ).find( "span" ).text( "mouse leave" );
-                  });
-
-
-
-                $('.ramona-left').on('click', function(ev){
-                    ev.preventDefault();
-                    $('.ramona').animateSprite('play', 'walkLeft');
-                });
-                $('.ramona-right').on('click', function(ev){
-                    ev.preventDefault();
-                    $('.ramona').animateSprite('play', 'walkRight');
-                });
-
-                $('#play-left').on('click', function(){
-                    $('.scott').animateSprite('play', 'walkLeft');
-                });
-
-                $('#play-right').on('click', function(){
-                    $('.scott').animateSprite('play', 'walkRight');
-                });
-
-                $('#stop-animation').on('click', function(){
-                    $('.scott').animateSprite('stopAnimation');
-                });
-                $('#resume-animation').on('click', function(){
-                    $('.scott').animateSprite('resumeAnimation');
-                });
-                $('#restart-animation').on('click', function(){
-                    $('.scott').animateSprite('restartAnimation');
-                });
-                $('.scott').on('click', function(){
-                    $('.scott').animateSprite('stopAnimation');
-                });
-                $('#goto-frame').on('click', function(){
-                    $('.scott').animateSprite('frame', 3);
-                });
-            });
-</script>
-
-
-</div>
-
-
-
-
+        
+            <div class="a_flexitem collect bunnybot" style="width:180px;background-position:200px 0px;"></div>
+            
+        
+            <div class="a_flexitem collect bunnybot" style="width:180px;background-position:400px 0px;"></div>
+            
+        
+            <div class="a_flexitem collect bunnybot" style="width:180px;background-position:600px 0px;"></div>
+            
+        
+            <div class="a_flexitem collect bunnybot" style="width:180px;background-position:800px 0px;"></div>
+            
+        
+            <div class="a_flexitem collect bunnybot" style="width:180px;background-position:1000px 0px;"></div>
+            
+        
+            <div class="a_flexitem collect bunnybot" style="width:180px;background-position:1200px 0px;"></div>
+            
+        
+            <div class="a_flexitem collect bunnybot" style="width:180px;background-position:1400px 0px;"></div>
+            
+        
+            <div class="a_flexitem collect bunnybot" style="width:180px;background-position:1600px 0px;"></div>
+            
+        
+            <div class="a_flexitem collect bunnybot" style="width:180px;background-position:1800px 0px;"></div>
+            
+        
+            <div class="a_flexitem collect bunnybot" style="width:180px;background-position:2000px 0px;"></div>
+            
+        
+            <div class="a_flexitem collect bunnybot" style="width:180px;background-position:2200px 0px;"></div>
+            
+        
+            <div class="a_flexitem collect bunnybot" style="width:180px;background-position:2400px 0px;"></div>
+            
+        
+            <div class="a_flexitem collect bunnybot" style="width:180px;background-position:2600px 0px;"></div>
+            
+        
+            <div class="a_flexitem collect bunnybot" style="width:180px;background-position:2800px 0px;"></div>
+            
+        
+            <div class="a_flexitem collect bunnybot" style="width:180px;background-position:3000px 0px;"></div>
+            
+        
+            <div class="a_flexitem collect bunnybot" style="width:180px;background-position:3200px 0px;"></div>
+            
+        
+            <div class="a_flexitem collect bunnybot" style="width:180px;background-position:3400px 0px;"></div>
+            
+        
+            <div class="a_flexitem collect bunnybot" style="width:180px;background-position:3600px 0px;"></div>
+            
+        
+            <div class="a_flexitem collect bunnybot" style="width:180px;background-position:3800px 0px;"></div>
+            
+        
+            <div class="a_flexitem collect bunnybot" style="width:180px;background-position:4000px 0px;"></div>
+            
+        
+            <div class="a_flexitem collect bunnybot" style="width:180px;background-position:4200px 0px;"></div>
+            
+        
+            <div class="a_flexitem collect bunnybot" style="width:180px;background-position:4400px 0px;"></div>
+            
+        
+            <div class="a_flexitem collect bunnybot" style="width:180px;background-position:4600px 0px;"></div>
+            
+        
+            <div class="a_flexitem collect bunnybot" style="width:180px;background-position:4800px 0px;"></div>
+            
+        
+            <div class="a_flexitem collect bunnybot" style="width:180px;background-position:5000px 0px;"></div>
+            
+        
+            <div class="a_flexitem collect bunnybot" style="width:180px;background-position:5200px 0px;"></div>
+            
+        
+            <div class="a_flexitem collect bunnybot" style="width:180px;background-position:5400px 0px;"></div>
+            
+        
+            <div class="a_flexitem collect bunnybot" style="width:180px;background-position:5600px 0px;"></div>
+            
+        
+            <div class="a_flexitem collect bunnybot" style="width:180px;background-position:5800px 0px;"></div>
+            
+        
     
-
-<div class="flexItem collect scott" style="height: 250px;width:200px;background-image: url(/images/bunnybot_spriteSmall.jpg);">
-<span>bunnybot</span>
-
-<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
-
-<script type="text/javascript" src="/scripts/jquery.animateSprite.min.js"></script>
-
-<script type="text/javascript">
-var eek = 0;
-      $(function() {
-                        $('.scott')
-                            .mouseenter(function() {
-                                eek++;
-                                if(eek==1) {
-                                    $('.scott').animateSprite({
-                                        fps: 10,
-                                        loop: true,
-                                        animations: {
-                                            walkRight: [ 1, 2, 3, 4, 5, 6, 7],
-                                        }
-                                    });
-                                } else {
-                                    $('.scott').animateSprite('resumeAnimation');
-                                }
-                            })
-                            .mouseleave(function() {
-                                $('.scott').animateSprite('stopAnimation');
-                            });
-
-
-                        /*
-                    .mouseleave(function() {
-                        $('.scott').animateSprite('stopAnimation');
-                    });*/
-
-
-                $( "div.enterleave" )
-                  .mouseenter(function() {
-                    n += 1;
-                    $( this ).find( "span" ).text( "mouse enter x " + n );
-                  })
-                  .mouseleave(function() {
-                    $( this ).find( "span" ).text( "mouse leave" );
-                  });
-
-
-
-                $('.ramona-left').on('click', function(ev){
-                    ev.preventDefault();
-                    $('.ramona').animateSprite('play', 'walkLeft');
-                });
-                $('.ramona-right').on('click', function(ev){
-                    ev.preventDefault();
-                    $('.ramona').animateSprite('play', 'walkRight');
-                });
-
-                $('#play-left').on('click', function(){
-                    $('.scott').animateSprite('play', 'walkLeft');
-                });
-
-                $('#play-right').on('click', function(){
-                    $('.scott').animateSprite('play', 'walkRight');
-                });
-
-                $('#stop-animation').on('click', function(){
-                    $('.scott').animateSprite('stopAnimation');
-                });
-                $('#resume-animation').on('click', function(){
-                    $('.scott').animateSprite('resumeAnimation');
-                });
-                $('#restart-animation').on('click', function(){
-                    $('.scott').animateSprite('restartAnimation');
-                });
-                $('.scott').on('click', function(){
-                    $('.scott').animateSprite('stopAnimation');
-                });
-                $('#goto-frame').on('click', function(){
-                    $('.scott').animateSprite('frame', 3);
-                });
-            });
-</script>
-
-
-</div>
-
-
-
-
-    
-
-<div class="flexItem collect scott" style="height: 250px;width:200px;background-image: url(/images/bunnybot_spriteSmall.jpg);">
-<span>bunnybot</span>
-
-<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
-
-<script type="text/javascript" src="/scripts/jquery.animateSprite.min.js"></script>
-
-<script type="text/javascript">
-var eek = 0;
-      $(function() {
-                        $('.scott')
-                            .mouseenter(function() {
-                                eek++;
-                                if(eek==1) {
-                                    $('.scott').animateSprite({
-                                        fps: 10,
-                                        loop: true,
-                                        animations: {
-                                            walkRight: [ 1, 2, 3, 4, 5, 6, 7],
-                                        }
-                                    });
-                                } else {
-                                    $('.scott').animateSprite('resumeAnimation');
-                                }
-                            })
-                            .mouseleave(function() {
-                                $('.scott').animateSprite('stopAnimation');
-                            });
-
-
-                        /*
-                    .mouseleave(function() {
-                        $('.scott').animateSprite('stopAnimation');
-                    });*/
-
-
-                $( "div.enterleave" )
-                  .mouseenter(function() {
-                    n += 1;
-                    $( this ).find( "span" ).text( "mouse enter x " + n );
-                  })
-                  .mouseleave(function() {
-                    $( this ).find( "span" ).text( "mouse leave" );
-                  });
-
-
-
-                $('.ramona-left').on('click', function(ev){
-                    ev.preventDefault();
-                    $('.ramona').animateSprite('play', 'walkLeft');
-                });
-                $('.ramona-right').on('click', function(ev){
-                    ev.preventDefault();
-                    $('.ramona').animateSprite('play', 'walkRight');
-                });
-
-                $('#play-left').on('click', function(){
-                    $('.scott').animateSprite('play', 'walkLeft');
-                });
-
-                $('#play-right').on('click', function(){
-                    $('.scott').animateSprite('play', 'walkRight');
-                });
-
-                $('#stop-animation').on('click', function(){
-                    $('.scott').animateSprite('stopAnimation');
-                });
-                $('#resume-animation').on('click', function(){
-                    $('.scott').animateSprite('resumeAnimation');
-                });
-                $('#restart-animation').on('click', function(){
-                    $('.scott').animateSprite('restartAnimation');
-                });
-                $('.scott').on('click', function(){
-                    $('.scott').animateSprite('stopAnimation');
-                });
-                $('#goto-frame').on('click', function(){
-                    $('.scott').animateSprite('frame', 3);
-                });
-            });
-</script>
-
-
-</div>
-
-
-
-
-    
-
-<div class="flexItem collect scott" style="height: 250px;width:200px;background-image: url(/images/bunnybot_spriteSmall.jpg);">
-<span>bunnybot</span>
-
-<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
-
-<script type="text/javascript" src="/scripts/jquery.animateSprite.min.js"></script>
-
-<script type="text/javascript">
-var eek = 0;
-      $(function() {
-                        $('.scott')
-                            .mouseenter(function() {
-                                eek++;
-                                if(eek==1) {
-                                    $('.scott').animateSprite({
-                                        fps: 10,
-                                        loop: true,
-                                        animations: {
-                                            walkRight: [ 1, 2, 3, 4, 5, 6, 7],
-                                        }
-                                    });
-                                } else {
-                                    $('.scott').animateSprite('resumeAnimation');
-                                }
-                            })
-                            .mouseleave(function() {
-                                $('.scott').animateSprite('stopAnimation');
-                            });
-
-
-                        /*
-                    .mouseleave(function() {
-                        $('.scott').animateSprite('stopAnimation');
-                    });*/
-
-
-                $( "div.enterleave" )
-                  .mouseenter(function() {
-                    n += 1;
-                    $( this ).find( "span" ).text( "mouse enter x " + n );
-                  })
-                  .mouseleave(function() {
-                    $( this ).find( "span" ).text( "mouse leave" );
-                  });
-
-
-
-                $('.ramona-left').on('click', function(ev){
-                    ev.preventDefault();
-                    $('.ramona').animateSprite('play', 'walkLeft');
-                });
-                $('.ramona-right').on('click', function(ev){
-                    ev.preventDefault();
-                    $('.ramona').animateSprite('play', 'walkRight');
-                });
-
-                $('#play-left').on('click', function(){
-                    $('.scott').animateSprite('play', 'walkLeft');
-                });
-
-                $('#play-right').on('click', function(){
-                    $('.scott').animateSprite('play', 'walkRight');
-                });
-
-                $('#stop-animation').on('click', function(){
-                    $('.scott').animateSprite('stopAnimation');
-                });
-                $('#resume-animation').on('click', function(){
-                    $('.scott').animateSprite('resumeAnimation');
-                });
-                $('#restart-animation').on('click', function(){
-                    $('.scott').animateSprite('restartAnimation');
-                });
-                $('.scott').on('click', function(){
-                    $('.scott').animateSprite('stopAnimation');
-                });
-                $('#goto-frame').on('click', function(){
-                    $('.scott').animateSprite('frame', 3);
-                });
-            });
-</script>
-
-
-</div>
-
-
 
 
 
