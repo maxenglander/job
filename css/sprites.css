@@ -2,5 +2,5 @@
 ---
 .bunnybot {
     height:250px;
-    background-image: url(/job/images/bunnybot_spriteSmall.jpg);
+    background-image: url({{site.baseurl}}/images/bunnybot_spriteSmall.jpg);
 }
