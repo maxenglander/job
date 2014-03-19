@@ -10,10 +10,10 @@
   -->
 
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <link rel="stylesheet" href="//css/flexbox.css" type="text/css">
-  <link rel="stylesheet" href="//css/samstyle.css" type="text/css">
-  <link rel="stylesheet" href="//css/gh.css" type="text/css">
-  <link rel="stylesheet" href="//css/sprites.css" type="text/css">
+  <link rel="stylesheet" href="/css/flexbox.css" type="text/css">
+  <link rel="stylesheet" href="/css/samstyle.css" type="text/css">
+  <link rel="stylesheet" href="/css/gh.css" type="text/css">
+  <link rel="stylesheet" href="/css/sprites.css" type="text/css">
 
 </head>
 <body>
@@ -21,8 +21,8 @@
 <div class="wrapper">
   <div class="header">
     <div class="links">
-      <a href="//art/index.html">art</a>
-      <a href="//programming/index.html">programming</a>
+      <a href="/art/index.html">art</a>
+      <a href="/programming/index.html">programming</a>
     </div>
   </div>
 
@@ -99,7 +99,7 @@
     <p>(picture)</p>
   </li>
   <li>
-    <p>Now let’s create the osc message we plan to send. Go to <code>Routing &gt; Manually Create Message...</code> Name it whatever you want and hit ok. A new message appears in the application window.</p>
+    <p>Now let&#8217;s create the osc message we plan to send. Go to <code>Routing &gt; Manually Create Message...</code> Name it whatever you want and hit ok. A new message appears in the application window.</p>
   </li>
   <li>
     <p>Under the Event Type column, select <code>OSC Routing</code> from the dropdown menu (click/hold the empty slot of the message to reveal the dropdown menu).</p>
@@ -128,20 +128,20 @@
 }
 </code></pre>
 
-<p>Determined by the “main” field in package.json, main.js will be the primary entry point of openbuttkiss.</p>
+<p>Determined by the &#8220;main&#8221; field in package.json, main.js will be the primary entry point of openbuttkiss.</p>
 
-<p>The “generator-core-version” field tells us what version of generator we are using. In my experience, a version below 2 would render the plugin incompatible.</p>
+<p>The &#8220;generator-core-version&#8221; field tells us what version of generator we are using. In my experience, a version below 2 would render the plugin incompatible.</p>
 
 <pre class="break-me"><code>Potential problem with plugin at '/Users/samenglander/Github/generator-core/test/plugins/myopenbuttkiss': The plugin openbuttkiss is incompatible with this version of generator-core. generator-core version: 2.0.3-dev, plugin compatibility: ~1
 </code></pre>
 
-<p>I recommend sticking with “~2”.</p>
+<p>I recommend sticking with &#8220;~2&#8221;.</p>
 
-<p>Any dependencies that our plugin requires are listed in the “dependencies” field. There were all downloaded into our plugin folder when we ran <code>npm install</code> Openbuttkiss requires node-osc. Node-osc including osc-min facts.</p>
+<p>Any dependencies that our plugin requires are listed in the &#8220;dependencies&#8221; field. There were all downloaded into our plugin folder when we ran <code>npm install</code> Openbuttkiss requires node-osc. Node-osc including osc-min facts.</p>
 
 <h3 id="mainjs">main.js</h3>
 
-<p>Much of my code was scraped/taken from Tom Krcha’s <a href="https://github.com/adobe-photoshop/generator-getting-started" title="getting-started-plugin">getting-started-plugin</a>. It provided me a foundation for building up (adding) the/these following osc features.</p>
+<p>Much of my code was scraped/taken from Tom Krcha&#8217;s <a href="https://github.com/adobe-photoshop/generator-getting-started" title="getting-started-plugin">getting-started-plugin</a>. It provided me a foundation for building up (adding) the/these following osc features.</p>
 
 <pre><code>var oscR = require('node-osc'),
 </code></pre>
@@ -159,7 +159,7 @@
 </code></pre>
 
 <ul>
-  <li>This object gets assigned either a 0 or 1 based on openbuttkiss’s menu-state - whether is is checked or unchecked. 0 = unchecked, 1 = checked.</li>
+  <li>This object gets assigned either a 0 or 1 based on openbuttkiss&#8217;s menu-state - whether is is checked or unchecked. 0 = unchecked, 1 = checked.</li>
 </ul>
 <pre><code>psToFront = "app.bringToFront();";
 </code></pre>
@@ -174,7 +174,7 @@
 </code></pre>
 
 <ul>
-  <li>This simple block of code swaps the foreground and background colors. As this is jsx code, we must treat it differently than the other javascript code in main.js. It must be passed as a string through _generator.evaluateJSXString(‘’). I got majorly stuck on this when I first tried to do anything with JSX code and Generator - <a href="https://github.com/adobe-photoshop/generator-core/issues/138" title="thx joel">this is me getting help</a>.</li>
+  <li>This simple block of code swaps the foreground and background colors. As this is jsx code, we must treat it differently than the other javascript code in main.js. It must be passed as a string through _generator.evaluateJSXString(&#8216;&#8217;). I got majorly stuck on this when I first tried to do anything with JSX code and Generator - <a href="https://github.com/adobe-photoshop/generator-core/issues/138" title="thx joel">this is me getting help</a>.</li>
 </ul>
 
 <pre><code>oscServer.on("message", function (msg, rinfo) {
@@ -186,9 +186,9 @@
 
 <ul>
   <li>
-    <p>oscServer.on is the server’s listener - it listens for incoming osc messages. <u>The plugin must be checked atleast once for the listener to initialize</u>. After that it will always be on, choosing whether or not to perform actions based on toggler’s status. If 0, the message is recieved, but nothing is done. If 1, our actions() function is called. So in this plugin, the conditions that must be met for our actions to execture are: openbuttkiss must be checked and an osc message with the value 1 must be recieved.</p>
+    <p>oscServer.on is the server&#8217;s listener - it listens for incoming osc messages. <u>The plugin must be checked atleast once for the listener to initialize</u>. After that it will always be on, choosing whether or not to perform actions based on toggler’s status. If 0, the message is recieved, but nothing is done. If 1, our actions() function is called. So in this plugin, the conditions that must be met for our actions to execture are: openbuttkiss must be checked and an osc message with the value 1 must be recieved.</p>
 
-    <p>There are probebly other ways in which (determine) our plugin menu-state can influence our osc server/listener. Finding a way to actually disable the oscServer’s listener or oscServer itself based on menu-state may be a more efficient solution to what we have currently: the server listener always being on, recieving osc messages all the time, only executing an action when the menu-state is checked.</p>
+    <p>There are probebly other ways in which (determine) our plugin menu-state can influence our osc server/listener. Finding a way to actually disable the oscServer&#8217;s listener or oscServer itself based on menu-state may be a more efficient solution to what we have currently: the server listener always being on, recieving osc messages all the time, only executing an action when the menu-state is checked.</p>
   </li>
 </ul>
 
@@ -208,19 +208,19 @@
   </thead>
   <tbody>
     <tr>
-      <td style="text-align: center">[ ‘bubbahjubbah’, 1 ]</td>
+      <td style="text-align: center">[ &#8216;bubbahjubbah&#8217;, 1 ]</td>
       <td style="text-align: center">bubbahjubbah</td>
       <td style="text-align: center">1</td>
     </tr>
     <tr>
-      <td style="text-align: center">[ ‘bubbahjubbah’, 0 ]</td>
+      <td style="text-align: center">[ &#8216;bubbahjubbah&#8217;, 0 ]</td>
       <td style="text-align: center">bubbahjubbah</td>
       <td style="text-align: center">0</td>
     </tr>
   </tbody>
 </table>
 
-<p>I’m sure node-osc and other nodejs osc modules allow for more elaborate parsing of messages. I have yet to delve deeper into opensoundcontrol, and my involvment with it has probebly not surpassed a most basic usage. The benefits of osc seem to be in its ability to develop a rich organization of flexible parameter names. Openbuttkiss keeps clear of all that - its only interest is a message argument of 1; It places no importance on the message address, which can be called anything.</p>
+<p>I&#8217;m sure node-osc and other nodejs osc modules allow for more elaborate parsing of messages. I have yet to delve deeper into opensoundcontrol, and my involvment with it has probebly not surpassed a most basic usage. The benefits of osc seem to be in its ability to develop a rich organization of flexible parameter names. Openbuttkiss keeps clear of all that - its only interest is a message argument of 1; It places no importance on the message address, which can be called anything.</p>
 
 <dl>
   <dt>For more info on opensoundcontrol</dt>
@@ -252,7 +252,7 @@
 }
 </code></pre>
 
-<p>This logic exists inside the onMenuClicked() function. Each time openbuttkiss’s menu-state changes (checked/unchecked), an if / else statement is executed, setting toggler to 0 or 1.</p>
+<p>This logic exists inside the onMenuClicked() function. Each time openbuttkiss&#8217;s menu-state changes (checked/unchecked), an if / else statement is executed, setting toggler to 0 or 1.</p>
 
 <p>this will be on mac</p>
 
@@ -272,7 +272,7 @@ THE/OUR
 
 <p>Clicking the green box in osculator!!!</p>
 
-<p>USE ARGUMENT» NOT VALUE !!</p>
+<p>USE ARGUMENT&#187; NOT VALUE !!</p>
 </div>
 
 </div>
