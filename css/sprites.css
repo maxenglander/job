@@ -1,6 +1,6 @@
+---
+---
 .bunnybot {
     height:250px;
-    /*background-image: url({{ site.baseurl }}/images/{{ post.custom_sprite }}_spriteSmall.jpg);*/
-
-    background-image: url(/images/bunnybot_spriteSmall.jpg);
+    background-image: url(/job/images/bunnybot_spriteSmall.jpg);
 }
